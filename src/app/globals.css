@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Prod-Normal';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+      local('Product Sans Regular'),
+      url('/fonts/ProductSans-Regular.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Prod-Italic';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src:
+      local('Product Sans Italic'),
+      url('/fonts/ProductSans-Italic.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Prod-Thin';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src:
+      local('Product Sans Thin Regular'),
+      url('/fonts/ProductSans-Thin.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Prod-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src:
+      local('Product Sans Light Regular'),
+      url('/fonts/ProductSans-Light.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Prod-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src:
+      local('Product Sans Medium Regular'),
+      url('/fonts/ProductSans-Medium.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Prod-Black-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+      local('Product Sans Black Regular'),
+      url('/fonts/ProductSans-Black.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Prod-Thin-Italic';
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src:
+      local('Product Sans Thin Italic'),
+      url('/fonts/ProductSans-ThinItalic.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Prod-Light-Italic';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src:
+      local('Product Sans Light Italic'),
+      url('/fonts/ProductSans-LightItalic.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Prod-Medium-Italic';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src:
+      local('Product Sans Medium Italic'),
+      url('/fonts/ProductSans-MediumItalic.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Prod-bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+      local('Product Sans Bold'),
+      url('/fonts/ProductSans-Bold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Prod-Bold-Italic';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src:
+      local('Product Sans Bold Italic'),
+      url('/fonts/ProductSans-BoldItalic.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Prod-Black-Italic';
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src:
+      local('Product Sans Black Italic'),
+      url('/fonts/ProductSans-BlackItalic.woff') format('woff');
+  }
+}
+
+body {
+  @apply bg-[#040214] font-[Prod-normal];
+}
+
+.homebutton {
+  @apply min-w-[11rem] rounded-full border-2 border-[#0060ff] px-7 py-3 font-normal text-white shadow-[0px_0px_38.5px_14px_#0060ff25] hover:bg-[#004bb5] hover:shadow-[0px_0px_38.5px_14px_#0060ff50] lg:text-lg;
+}
+
+.evoxhighlight {
+  @apply text-[#0060ff];
+}
+
+.middleshadow {
+  box-shadow: 0px 4px 20px 20px rgb(0 96 255 / 0.05);
+}
+
+.active {
+  @apply text-white underline underline-offset-8;
+}
+
+.buttonSelect {
+  @apply w-fit rounded-full border-2 border-[#0060ff] px-6 py-3 text-white text-center uppercase duration-100 ease-linear hover:bg-[#004bb5] hover:bg-[#0060ff] hover:shadow-[0px_0px_38.5px_14px_#0060ff25];
+}
+
+.fadeEffect {
+  @apply !bg-clip-text text-center font-[prod-bold] text-[156px] text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent];
+}
